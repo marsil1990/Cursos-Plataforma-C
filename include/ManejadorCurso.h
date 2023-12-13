@@ -14,10 +14,11 @@ class Ejercicio;
 
 class ManejadorCurso
 {
-public:
+private: 
     static ManejadorCurso *instancia;
     map<string, Curso*>* Cursos;
     ManejadorCurso();
+public:
     static ManejadorCurso* getInstancia();
     Curso* obtenerCurso(string nombreCurso);
     set<string>* obtenerCursosDisponibles();
